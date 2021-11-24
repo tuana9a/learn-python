@@ -27,11 +27,16 @@ p1.myfunc()
 
 del p1.age
 del p1
-p1
+# p1
 
 # kế thừa class Person
 class Student(Person):
+  def __init__(mysillyobject, name, age):
+    super().__init__(name, age)
   pass
+
+s = Student("tuana9a", 12)
+s.myfunc()
 
 class Duck:
     sound='quackk'
@@ -40,3 +45,23 @@ class Duck:
         print(self.sound)
 d = Duck()
 d.hello()
+
+class Test1():
+  def __init__(self, name):
+    super().__init__()
+    self.test1 = f'hi im {name}'
+    
+  @property
+  def name(self):
+    return f'my test1 is {self.test1}'
+    
+  @classmethod
+  def name1(cls):
+    return f'"co con cac day la class "' + str(cls)
+
+
+# print(Test1("tuan").name)
+print(Test1("tuan").name1)
+print(Test1("tuan").name1())
+print(Test1.name1)
+print(Test1.name1())
