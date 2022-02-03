@@ -1,8 +1,8 @@
 import threading
 
-def set_interval(func, sec, delay=True):
+def setInterval(func, sec, delay=True):
     def func_wrapper():
-        set_interval(func, sec)
+        setInterval(func, sec)
         func()
 
     if(not delay):
