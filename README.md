@@ -10,10 +10,16 @@ với môi trưởng ảo sẽ có site-packages độc lập với global và t
 
 # install editable
 
-`python -m pip install --editable .`
+```bash
+# cd first
+cd my_packages/
 
-`python -m pip install -e .`
+# then
+python -m pip install --editable .
 
-`pip install -e .`
+python -m pip install -e .
+
+pip install -e .
+```
 
 install sẽ tạo một link tới package đang được edit
