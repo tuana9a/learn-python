@@ -1,0 +1,1 @@
+-e git+ssh://git@github.com/tuana9a/learn-python.git@9a3d0ef3bdabdf9f610dd4bcbde28ee4bbb208f1#egg=tuana9a&subdirectory=custom-packages/tuana9a

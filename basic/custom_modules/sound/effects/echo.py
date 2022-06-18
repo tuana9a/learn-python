@@ -1,4 +1,4 @@
-from modules.sound.effects import reverse
+from custom_modules.sound.effects import reverse
 
 
 def echo_helloworld():
