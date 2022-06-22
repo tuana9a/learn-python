@@ -5,17 +5,18 @@ import threading
 def read(event: threading.Event):
     i = 0
     while True:
-        event.wait()
-        print(f"hello world {i}")
+        print(f"worker do job {i}")
         i += 1
+        event.clear()
+        event.wait()
 
 def monitor(event: threading.Event):
     while True:
         sleep_time = random.randint(1, 5)
-        print('monitor sleep', sleep_time)
         time.sleep(sleep_time)
+        print('===')
+        print('after monitor sleep', sleep_time)
         event.set()
-        event.clear()
 
 lock = threading.Event()
 
